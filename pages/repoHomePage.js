@@ -38,7 +38,10 @@ class repoHomePage {
     browser.waitUntil(
       () => (browser.isVisible(page) && browser.isVisible(repoElements)),
       5000,
-      `Elements: "${page}: ${browser.isVisible(page)}"; "${repoElements}:${browser.isVisible(repoElements)}";still not visible after 5000 ms`);
+      'Elements:' +
+       `\n"${page}: ${browser.isVisible(page)}";` +
+       `\n"${repoElements}: ${browser.isVisible(repoElements)}";` +
+       '\nstill not visible after 5000 ms');
     return true;
   }
 
