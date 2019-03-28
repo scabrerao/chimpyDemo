@@ -1,0 +1,18 @@
+{
+  "name": "ValidateGithubRepository",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Return all files in a plain list",
+  "scripts": {
+    "tests": "chimpy --browser=chrome --jsonOutput=report_output/cucumber_output.json",
+    "report": "node --max-old-space-size=4096 utils/reports.js --scripts-prepend-node-path"
+  },
+  "devDependencies": {
+    "cucumber-html-reporter": "^4.0.2",
+    "moment": "^2.22.1",
+    "deepmerge": "^2.1.0"
+  },
+  "dependencies": {
+    "chimpy": "0.54.0"
+  }
+}
